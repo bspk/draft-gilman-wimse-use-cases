@@ -95,22 +95,22 @@ As a security engineer, I’d like to be able to make local authentication and a
 
 1.    As a developer, I’d like security-related hot path delays to not exceed <<10ms
 1.    As a developer, I’d like things to continue working through (potentially asymmetric) network disruption
-1.    Lookup of info/keys related to bubble identity needs to work when the bubble is disconnected from the rest of the system (particularly “upstream” bubbles)
-1.    Account onboarding is not strictly time-sensitive (can use networks), but local account use is (needs to stay within the bubble)
+1.    Lookup of info/keys related to an entity's identity needs to work when the entity is disconnected from the rest of the system (particularly “upstream” entities that trust comes from)
+1.    Account onboarding is not strictly time-sensitive (can use networks), but local account use is (day-to-day authentication needs to stay local)
 
 ## Audit Logs
 
 As a security engineer, I’d like a place to record information about an entity for the purposes of remediation, reconciliation, audit and forensics
 
 1.    If a workload is compromised, I can remediate that specific workload without impacting others.
-1.    If an account is onboarded into a bubble based on info from another bubble, we need to write that down into the account and carry it through the network, especially if the account is used to onboard onto a bubble further down
-1.    Reconcile when bubble is re-connected to the fabric
+1.    If an account is onboarded based on info from another entity, we need to write that down into the account and carry it through the network, especially if the account is used to onboard onto a entity further down
+1.    Reconcile logs when a disconnected entity is re-connected to the overall network fabric
 
 ## Consistent Entity Identification
 
 I need to be able to identify different entities uniquely and deterministically within the system.
 
-1.    Federation bubbles: each bubble needs to be identified uniquely (and http urls don’t quite give us all the attributes we need)
+1.    Each network entity needs to be identified uniquely (and http urls don’t quite give us all the aspects we need)
 1.    As a SPIFFE user, I’d like a standard way to learn the bundle endpoint parameters of a remote trust domain
 
 ## Authorization
@@ -119,7 +119,7 @@ As a security engineer, I’d like a place to record information about an entity
 
 1.    As a security engineer, I’d like to authorize an RPC iff the software calling it matches a specific SHA value
 1.    Authentication based on CSP/infrastructure/workload identity documents
-1.    Ability to carry rights/policies/privileges with a verifiable artifact to a disconnected bubble
+1.    Ability to carry rights/policies/privileges with a verifiable artifact to a disconnected entity for that entity to verify without having to reconnect
 1.    Transporting capabilities to transfer the permission to execute an operation from caller to service
 1.    Record should be append-only as it goes through the call chain; participation (adding to the record) is not mandatory for every node in the chain
 
