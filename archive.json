@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-08-22T00:28:26.804443+00:00",
+  "timestamp": "2023-08-24T00:28:08.528567+00:00",
   "repo": "bspk/draft-gilman-wimse-use-cases",
   "labels": [
     {
@@ -50,5 +50,48 @@
     }
   ],
   "issues": [],
-  "pulls": []
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDOJ_Uxms5YeZKK",
+      "title": "remove \"bubble\" language",
+      "url": "https://github.com/bspk/draft-gilman-wimse-use-cases/pull/1",
+      "state": "MERGED",
+      "author": "jricher",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2023-08-22T09:15:55Z",
+      "updatedAt": "2023-08-23T15:19:17Z",
+      "baseRepository": "bspk/draft-gilman-wimse-use-cases",
+      "baseRefName": "main",
+      "baseRefOid": "8ca43aff4f19a7e75d9eefb34e390b7a594b9862",
+      "headRepository": "bspk/draft-gilman-wimse-use-cases",
+      "headRefName": "bubble-cleanup",
+      "headRefOid": "f82ba00a4c03762dc5e8517811f37c3bf00c72cb",
+      "closedAt": "2023-08-23T15:19:12Z",
+      "mergedAt": "2023-08-23T15:19:12Z",
+      "mergedBy": "jricher",
+      "mergeCommit": {
+        "oid": "41614702e423cae7715759a0bf527a94f5620a5d"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOJ_Uxms5e0TWV",
+          "commit": {
+            "abbreviatedOid": "f82ba00"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-08-23T05:16:52Z",
+          "updatedAt": "2023-08-23T05:16:52Z",
+          "comments": []
+        }
+      ]
+    }
+  ]
 }
