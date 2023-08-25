@@ -117,7 +117,7 @@ I need to be able to identify different entities uniquely and deterministically 
 
 As a security engineer, I’d like a place to record information about an entity for use in authorization decisions
 
-1.    As a security engineer, I’d like to authorize an RPC iff the software calling it matches a specific SHA value
+1.    As a security engineer, I’d like to authorize an RPC iff the origin and integrity of the software calling it can be verified (e.g. matches a specific hash value, signature and trusted software bill of materials (SBOM))
 1.    Authentication based on CSP/infrastructure/workload identity documents
 1.    Ability to carry rights/policies/privileges with a verifiable artifact to a disconnected entity for that entity to verify without having to reconnect
 1.    Transporting capabilities to transfer the permission to execute an operation from caller to service
