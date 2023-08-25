@@ -59,7 +59,7 @@ This document captures those challenges as a set of use cases as a first step to
 
 # Use Cases
 
-This section captures the underserved use cases identified. To start, we organized use cases by the person contributing them to this doc. Then, we attempted to bucket them by use case - this is still a WIP. Once finished, we will see what patterns emerge (e.g. policy enforcement, operational, etc) and prioritize them.
+This section captures the underserved use cases identified. Once finished, we will see what patterns emerge (e.g. policy enforcement, operational, etc) and prioritize them. This is still a work in progress (WIP) and we invite members of the community to contribute additional use cases.
 
 ## Constrained Credential Security
 
