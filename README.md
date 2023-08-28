@@ -8,6 +8,8 @@ This is the working area for the individual Internet-Draft, "Workload Identity U
 * [Compare Editor's Copy to Individual Draft](https://bspk.github.io/draft-gilman-wimse-use-cases/#go.draft-gilman-wimse-use-cases.diff)
 
 
+For discussion, please use the [WIMSE mailing list](https://www.ietf.org/mailman/listinfo/wimse) _[[Archives](https://mailarchive.ietf.org/arch/browse/wimse/)]_.
+
 ## Contributing
 
 See the
