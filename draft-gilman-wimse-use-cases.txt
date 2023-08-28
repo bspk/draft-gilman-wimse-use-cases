@@ -120,7 +120,9 @@ Table of Contents
 
    2.  If a workload credential is compromised, I can’t re-use it.
 
-   3.  Workload authentication using asymmetric credentials
+   3.  Workload authentication using asymmetric credentials 1.  Support
+       mTLS and alternaive forms of asymmetric authentication 1.  More
+       robust than PVT_KEY_JWT authentication
 
 3.2.  Cross-workload Access
 
