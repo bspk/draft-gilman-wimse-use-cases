@@ -218,7 +218,9 @@ Table of Contents
    an entity for use in authorization decisions.
 
    1.  As a security engineer, I’d like to authorize an RPC iff the
-       software calling it matches a specific SHA value.
+       origin and integrity of the software calling it can be verified
+       (e.g. matches a specific hash value, signature and trusted
+       software bill of materials (SBOM))
 
    2.  Authentication based on credential service provider (CSP),
        infrastructure or workload identity documents.
