@@ -5,12 +5,12 @@
 Network Working Group                                     E. Gilman, Ed.
 Internet-Draft                                                     SPIRL
 Intended status: Informational                                 J. Richer
-Expires: 24 February 2024                            Bespoke Engineering
+Expires: 29 February 2024                            Bespoke Engineering
                                                             P. Kasselman
                                                                Microsoft
                                                               J. Salowey
                                                                   Venafi
-                                                          23 August 2023
+                                                          28 August 2023
 
 
                       Workload Identity Use Cases
@@ -46,7 +46,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 24 February 2024.
+   This Internet-Draft will expire on 29 February 2024.
 
 Copyright Notice
 
@@ -103,11 +103,11 @@ Table of Contents
 
 3.  Use Cases
 
-   This section captures the underserved use cases identified.  To
-   start, we organized use cases by the person contributing them to this
-   doc.  Then, we attempted to bucket them by use case - this is still a
-   WIP.  Once finished, we will see what patterns emerge (e.g. policy
-   enforcement, operational, etc) and prioritize them.
+   This section captures the underserved use cases identified.  Once
+   finished, we will see what patterns emerge (e.g. policy enforcement,
+   operational, etc) and prioritize them.  This is still a work in
+   progress (WIP) and we invite members of the community to contribute
+   additional use cases.
 
 3.1.  Constrained Credential Security
 
