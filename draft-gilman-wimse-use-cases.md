@@ -68,6 +68,8 @@ As a security engineer, I’d like to mitigate the unconstrained re-use of a cre
 1.    As a security engineer, I’d like to prevent token replay in the event that one of my internal services is compromised.
 1.    If a workload credential is compromised, I can’t re-use it.
 1.    Workload authentication using asymmetric credentials
+    1. Support mTLS and alternaive forms of asymmetric authentication
+    1. More robust than PVT_KEY_JWT authentication
 
 ## Cross-workload Access
 
