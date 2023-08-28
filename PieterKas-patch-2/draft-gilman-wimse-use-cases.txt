@@ -5,12 +5,12 @@
 Network Working Group                                     E. Gilman, Ed.
 Internet-Draft                                                     SPIRL
 Intended status: Informational                                 J. Richer
-Expires: 26 February 2024                            Bespoke Engineering
+Expires: 29 February 2024                            Bespoke Engineering
                                                             P. Kasselman
                                                                Microsoft
                                                               J. Salowey
                                                                   Venafi
-                                                          25 August 2023
+                                                          28 August 2023
 
 
                       Workload Identity Use Cases
@@ -46,7 +46,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 26 February 2024.
+   This Internet-Draft will expire on 29 February 2024.
 
 Copyright Notice
 
@@ -239,8 +239,8 @@ Table of Contents
    In addition to the above use cases, the authors have determined the
    following general requirements:
 
-   AI: Observability should be a requirement.  The credential should
-   have a meaningful identifier that can be logged etc.
+   Observability should be a requirement.  The credential should have a
+   meaningful identifier that can be logged etc.
 
    Accountability: Workloads need to be able to make a localized
    decision but still be accountable to the overarching policy and
