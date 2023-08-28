@@ -82,50 +82,50 @@ As a [SPIFFE,OAuth] workload owner, I’d like to access other workloads that ar
 As a security engineer, I’d like a verifiable chain of custody for each request transiting my system, starting with the request initiator, which may be a human or a workload.
 
 1.    As a security engineer, I’d like to authorize data access RPCs iff the data owner issued the original request (a requests made by the data owner transit many backend services prior to reaching the data access layer).
-2.    Authenticating and authorizing a service that is operating on behalf of a logged in user.
-3.    Authenticating and authorizing a service that is operating on behalf of a user as a schedule job.
-4.    As a security engineer, I’d like to authorize payment RPCs iff the request has transited our fraud detection service.
-5.    As a security engineer, I’d like to authorize an RPC iff the request entered our infrastructure via a specific front end system.
+1.    Authenticating and authorizing a service that is operating on behalf of a logged in user.
+1.    Authenticating and authorizing a service that is operating on behalf of a user as a schedule job.
+1.    As a security engineer, I’d like to authorize payment RPCs iff the request has transited our fraud detection service.
+1.    As a security engineer, I’d like to authorize an RPC iff the request entered our infrastructure via a specific front end system.
 
 ## Local Authentication and Authorization Decisions
 
 As a security engineer, I’d like to be able to make local authentication and authorization decisions in order to meet my performance and availability requirements.
 
 1.    As a developer, I’d like security-related hot path delays to not exceed <<10ms.
-2.    As a developer, I’d like things to continue working through (potentially asymmetric) network disruption.
-3.    Lookup of info/keys related to an entity's identity needs to work when the entity is disconnected from the rest of the system (particularly “upstream” entities that trust comes from).
-4.    Account onboarding is not strictly time-sensitive (can use networks), but local account use is (day-to-day authentication needs to stay local).
+1.    As a developer, I’d like things to continue working through (potentially asymmetric) network disruption.
+1.    Lookup of info/keys related to an entity's identity needs to work when the entity is disconnected from the rest of the system (particularly “upstream” entities that trust comes from).
+1.    Account onboarding is not strictly time-sensitive (can use networks), but local account use is (day-to-day authentication needs to stay local).
 
 ## Audit Logs
 
 As a security engineer, I’d like a place to record information about an entity for the purposes of remediation, reconciliation, audit and forensics.
 
 1.    If a workload is compromised, I can remediate that specific workload without impacting others.
-2.    If an account is onboarded based on info from another entity, we need to write that down into the account and carry it through the network, especially if the account is used to onboard onto an entity further down the call stack.
-3.    Reconcile logs when a disconnected entity is re-connected to the overall network fabric.
+1.    If an account is onboarded based on info from another entity, we need to write that down into the account and carry it through the network, especially if the account is used to onboard onto an entity further down the call stack.
+1.    Reconcile logs when a disconnected entity is re-connected to the overall network fabric.
 
 ## Consistent Entity Identification
 
 I need to be able to identify different entities uniquely and deterministically within the system.
 
 1.    Each network entity needs to be identified uniquely (and http urls don’t quite give us all the aspects we need)
-2.    As a SPIFFE user, I’d like a standard way to learn the bundle endpoint parameters of a remote trust domain
+1.    As a SPIFFE user, I’d like a standard way to learn the bundle endpoint parameters of a remote trust domain
 
 ## Authorization
 
 As a security engineer, I’d like a place to record information about an entity for use in authorization decisions.
 
 1.    As a security engineer, I’d like to authorize an RPC iff the software calling it matches a specific SHA value.
-2.    Authentication based on credential service provider (CSP), infrastructure or workload identity documents.
-3.    Ability to carry rights/policies/privileges with a verifiable artifact to a disconnected entity for that entity to verify without having to reconnect.
-4.    Transporting capabilities to transfer the permission to execute an operation from caller to service.
-5.    Record should be append-only as it goes through the call chain. Participation (adding to the record) is not mandatory for every node in the chain.
+1.    Authentication based on credential service provider (CSP), infrastructure or workload identity documents.
+1.    Ability to carry rights/policies/privileges with a verifiable artifact to a disconnected entity for that entity to verify without having to reconnect.
+1.    Transporting capabilities to transfer the permission to execute an operation from caller to service.
+1.    Record should be append-only as it goes through the call chain. Participation (adding to the record) is not mandatory for every node in the chain.
 
 ## General requirements
 
 In addition to the above use cases, the authors have determined the following general requirements:
 
-AI: Observability should be a requirement. The credential should have a meaningful identifier that can be logged etc.
+Observability should be a requirement. The credential should have a meaningful identifier that can be logged etc.
 
 Accountability: Workloads need to be able to make a localized decision but still be accountable to the overarching policy and framework that provisioned them.
 
