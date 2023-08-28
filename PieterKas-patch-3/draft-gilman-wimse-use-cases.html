@@ -1056,7 +1056,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Gilman, et al.</td>
-<td class="center">Expires 26 February 2024</td>
+<td class="center">Expires 29 February 2024</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1069,12 +1069,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-gilman-wimse-use-cases-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2023-08-25" class="published">25 August 2023</time>
+<time datetime="2023-08-28" class="published">28 August 2023</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2024-02-26">26 February 2024</time></dd>
+<dd class="expires"><time datetime="2024-02-29">29 February 2024</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1129,7 +1129,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 26 February 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 29 February 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1231,7 +1231,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
       <h2 id="name-use-cases">
 <a href="#section-3" class="section-number selfRef">3. </a><a href="#name-use-cases" class="section-name selfRef">Use Cases</a>
       </h2>
-<p id="section-3-1">This section captures the underserved use cases identified. To start, we organized use cases by the person contributing them to this doc. Then, we attempted to bucket them by use case - this is still a WIP. Once finished, we will see what patterns emerge (e.g. policy enforcement, operational, etc) and prioritize them.<a href="#section-3-1" class="pilcrow">¶</a></p>
+<p id="section-3-1">This section captures the underserved use cases identified. Once finished, we will see what patterns emerge (e.g. policy enforcement, operational, etc) and prioritize them. This is still a work in progress (WIP) and we invite members of the community to contribute additional use cases.<a href="#section-3-1" class="pilcrow">¶</a></p>
 <div id="constrained-credential-security">
 <section id="section-3.1">
         <h3 id="name-constrained-credential-secu">
@@ -1239,11 +1239,11 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
         </h3>
 <p id="section-3.1-1">As a security engineer, I’d like to mitigate the unconstrained re-use of a credential by those who are able to observe it in use (e.g. a proxy, a log message, or a workload processing the request)<a href="#section-3.1-1" class="pilcrow">¶</a></p>
 <ol start="1" type="1" class="normal type-1" id="section-3.1-2">
-<li id="section-3.1-2.1">As a security engineer, I’d like to prevent token replay in the event that one of my internal services is compromised<a href="#section-3.1-2.1" class="pilcrow">¶</a>
+<li id="section-3.1-2.1">As a security engineer, I’d like to prevent token replay in the event that one of my internal services is compromised.<a href="#section-3.1-2.1" class="pilcrow">¶</a>
 </li>
           <li id="section-3.1-2.2">If a workload credential is compromised, I can’t re-use it.<a href="#section-3.1-2.2" class="pilcrow">¶</a>
 </li>
-          <li id="section-3.1-2.3">Authentication using asymmetric credentials<a href="#section-3.1-2.3" class="pilcrow">¶</a>
+          <li id="section-3.1-2.3">Workload authentication using asymmetric credentials<a href="#section-3.1-2.3" class="pilcrow">¶</a>
 </li>
         </ol>
 </section>
@@ -1255,12 +1255,11 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
         </h3>
 <p id="section-3.2-1">As a [SPIFFE,OAuth] workload owner, I’d like to access other workloads that are using [SPIFFE,OAuth] in a simple and consistent way, regardless of their location, platform, or domain.<a href="#section-3.2-1" class="pilcrow">¶</a></p>
 <ol start="1" type="1" class="normal type-1" id="section-3.2-2">
-<li id="section-3.2-2.1">As a SPIFFE user, I’d like to access OAuth protected resources without having to provide any additional secrets
-    1.    As a SPIFFE user with more than 10k workloads, I’d like to access OAuth protected resources without having to manage 10k OAuth Clients<a href="#section-3.2-2.1" class="pilcrow">¶</a>
+<li id="section-3.2-2.1">As a SPIFFE user, I’d like to access OAuth protected resources without having to provide any additional secrets (as a SPIFFE user with more than 10k workloads, I’d like to access OAuth protected resources without having to manage 10k OAuth Clients).<a href="#section-3.2-2.1" class="pilcrow">¶</a>
 </li>
-          <li id="section-3.2-2.2">Access workloads from different service providers (access across different trust domains workloads to workload from different companies)<a href="#section-3.2-2.2" class="pilcrow">¶</a>
+          <li id="section-3.2-2.2">Access workloads from different service providers (access across different trust domains workloads to workload from different companies).<a href="#section-3.2-2.2" class="pilcrow">¶</a>
 </li>
-          <li id="section-3.2-2.3">Access workloads running in different cloud services (Multi-cloud deployments)<a href="#section-3.2-2.3" class="pilcrow">¶</a>
+          <li id="section-3.2-2.3">Access workloads running in different cloud services (Multi-cloud deployments).<a href="#section-3.2-2.3" class="pilcrow">¶</a>
 </li>
         </ol>
 </section>
@@ -1270,18 +1269,17 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
         <h3 id="name-chain-of-custody-for-reques">
 <a href="#section-3.3" class="section-number selfRef">3.3. </a><a href="#name-chain-of-custody-for-reques" class="section-name selfRef">Chain of Custody for Requests</a>
         </h3>
-<p id="section-3.3-1">As a security engineer, I’d like a verifiable chain of custody for each request transiting my system, starting with the request initiator, which may be a human or a workload<a href="#section-3.3-1" class="pilcrow">¶</a></p>
+<p id="section-3.3-1">As a security engineer, I’d like a verifiable chain of custody for each request transiting my system, starting with the request initiator, which may be a human or a workload.<a href="#section-3.3-1" class="pilcrow">¶</a></p>
 <ol start="1" type="1" class="normal type-1" id="section-3.3-2">
-<li id="section-3.3-2.1">As a security engineer, I’d like to authorize data access RPCs iff the data owner issued the original request
-    1.    Requests made by the data owner transit many backend services prior to reaching the data access layer<a href="#section-3.3-2.1" class="pilcrow">¶</a>
+<li id="section-3.3-2.1">As a security engineer, I’d like to authorize data access RPCs iff the data owner issued the original request (a requests made by the data owner transit many backend services prior to reaching the data access layer).<a href="#section-3.3-2.1" class="pilcrow">¶</a>
 </li>
-          <li id="section-3.3-2.2">Authenticating and authorizing a service that is operating on behalf of a logged in user<a href="#section-3.3-2.2" class="pilcrow">¶</a>
+          <li id="section-3.3-2.2">Authenticating and authorizing a service that is operating on behalf of a logged in user.<a href="#section-3.3-2.2" class="pilcrow">¶</a>
 </li>
-          <li id="section-3.3-2.3">Authenticating and authorizing a service that is operating on behalf of a user as a schedule job<a href="#section-3.3-2.3" class="pilcrow">¶</a>
+          <li id="section-3.3-2.3">Authenticating and authorizing a service that is operating on behalf of a user as a schedule job.<a href="#section-3.3-2.3" class="pilcrow">¶</a>
 </li>
-          <li id="section-3.3-2.4">As a security engineer, I’d like to authorize payment RPCs iff the request has transited our fraud detection service<a href="#section-3.3-2.4" class="pilcrow">¶</a>
+          <li id="section-3.3-2.4">As a security engineer, I’d like to authorize payment RPCs iff the request has transited our fraud detection service.<a href="#section-3.3-2.4" class="pilcrow">¶</a>
 </li>
-          <li id="section-3.3-2.5">As a security engineer, I’d like to authorize an RPC iff the request entered our infrastructure via a specific front end system<a href="#section-3.3-2.5" class="pilcrow">¶</a>
+          <li id="section-3.3-2.5">As a security engineer, I’d like to authorize an RPC iff the request entered our infrastructure via a specific front end system.<a href="#section-3.3-2.5" class="pilcrow">¶</a>
 </li>
         </ol>
 </section>
@@ -1291,15 +1289,15 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
         <h3 id="name-local-authentication-and-au">
 <a href="#section-3.4" class="section-number selfRef">3.4. </a><a href="#name-local-authentication-and-au" class="section-name selfRef">Local Authentication and Authorization Decisions</a>
         </h3>
-<p id="section-3.4-1">As a security engineer, I’d like to be able to make local authentication and authorization decisions in order to meet my performance and availability requirements<a href="#section-3.4-1" class="pilcrow">¶</a></p>
+<p id="section-3.4-1">As a security engineer, I’d like to be able to make local authentication and authorization decisions in order to meet my performance and availability requirements.<a href="#section-3.4-1" class="pilcrow">¶</a></p>
 <ol start="1" type="1" class="normal type-1" id="section-3.4-2">
-<li id="section-3.4-2.1">As a developer, I’d like security-related hot path delays to not exceed &lt;&lt;10ms<a href="#section-3.4-2.1" class="pilcrow">¶</a>
+<li id="section-3.4-2.1">As a developer, I’d like security-related hot path delays to not exceed &lt;&lt;10ms.<a href="#section-3.4-2.1" class="pilcrow">¶</a>
 </li>
-          <li id="section-3.4-2.2">As a developer, I’d like things to continue working through (potentially asymmetric) network disruption<a href="#section-3.4-2.2" class="pilcrow">¶</a>
+          <li id="section-3.4-2.2">As a developer, I’d like things to continue working through (potentially asymmetric) network disruption.<a href="#section-3.4-2.2" class="pilcrow">¶</a>
 </li>
-          <li id="section-3.4-2.3">Lookup of info/keys related to an entity's identity needs to work when the entity is disconnected from the rest of the system (particularly “upstream” entities that trust comes from)<a href="#section-3.4-2.3" class="pilcrow">¶</a>
+          <li id="section-3.4-2.3">Lookup of info/keys related to an entity's identity needs to work when the entity is disconnected from the rest of the system (particularly “upstream” entities that trust comes from).<a href="#section-3.4-2.3" class="pilcrow">¶</a>
 </li>
-          <li id="section-3.4-2.4">Account onboarding is not strictly time-sensitive (can use networks), but local account use is (day-to-day authentication needs to stay local)<a href="#section-3.4-2.4" class="pilcrow">¶</a>
+          <li id="section-3.4-2.4">Account onboarding is not strictly time-sensitive (can use networks), but local account use is (day-to-day authentication needs to stay local).<a href="#section-3.4-2.4" class="pilcrow">¶</a>
 </li>
         </ol>
 </section>
@@ -1309,13 +1307,13 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
         <h3 id="name-audit-logs">
 <a href="#section-3.5" class="section-number selfRef">3.5. </a><a href="#name-audit-logs" class="section-name selfRef">Audit Logs</a>
         </h3>
-<p id="section-3.5-1">As a security engineer, I’d like a place to record information about an entity for the purposes of remediation, reconciliation, audit and forensics<a href="#section-3.5-1" class="pilcrow">¶</a></p>
+<p id="section-3.5-1">As a security engineer, I’d like a place to record information about an entity for the purposes of remediation, reconciliation, audit and forensics.<a href="#section-3.5-1" class="pilcrow">¶</a></p>
 <ol start="1" type="1" class="normal type-1" id="section-3.5-2">
 <li id="section-3.5-2.1">If a workload is compromised, I can remediate that specific workload without impacting others.<a href="#section-3.5-2.1" class="pilcrow">¶</a>
 </li>
-          <li id="section-3.5-2.2">If an account is onboarded based on info from another entity, we need to write that down into the account and carry it through the network, especially if the account is used to onboard onto a entity further down<a href="#section-3.5-2.2" class="pilcrow">¶</a>
+          <li id="section-3.5-2.2">If an account is onboarded based on info from another entity, we need to write that down into the account and carry it through the network, especially if the account is used to onboard onto an entity further down the call stack.<a href="#section-3.5-2.2" class="pilcrow">¶</a>
 </li>
-          <li id="section-3.5-2.3">Reconcile logs when a disconnected entity is re-connected to the overall network fabric<a href="#section-3.5-2.3" class="pilcrow">¶</a>
+          <li id="section-3.5-2.3">Reconcile logs when a disconnected entity is re-connected to the overall network fabric.<a href="#section-3.5-2.3" class="pilcrow">¶</a>
 </li>
         </ol>
 </section>
@@ -1339,17 +1337,17 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
         <h3 id="name-authorization">
 <a href="#section-3.7" class="section-number selfRef">3.7. </a><a href="#name-authorization" class="section-name selfRef">Authorization</a>
         </h3>
-<p id="section-3.7-1">As a security engineer, I’d like a place to record information about an entity for use in authorization decisions<a href="#section-3.7-1" class="pilcrow">¶</a></p>
+<p id="section-3.7-1">As a security engineer, I’d like a place to record information about an entity for use in authorization decisions.<a href="#section-3.7-1" class="pilcrow">¶</a></p>
 <ol start="1" type="1" class="normal type-1" id="section-3.7-2">
 <li id="section-3.7-2.1">As a security engineer, I’d like to authorize an RPC iff the origin and integrity of the software calling it can be verified (e.g. matches a specific hash value, signature and trusted software bill of materials (SBOM))<a href="#section-3.7-2.1" class="pilcrow">¶</a>
 </li>
-          <li id="section-3.7-2.2">Authentication based on CSP/infrastructure/workload identity documents<a href="#section-3.7-2.2" class="pilcrow">¶</a>
+          <li id="section-3.7-2.2">Authentication based on credential service provider (CSP), infrastructure or workload identity documents.<a href="#section-3.7-2.2" class="pilcrow">¶</a>
 </li>
-          <li id="section-3.7-2.3">Ability to carry rights/policies/privileges with a verifiable artifact to a disconnected entity for that entity to verify without having to reconnect<a href="#section-3.7-2.3" class="pilcrow">¶</a>
+          <li id="section-3.7-2.3">Ability to carry rights/policies/privileges with a verifiable artifact to a disconnected entity for that entity to verify without having to reconnect.<a href="#section-3.7-2.3" class="pilcrow">¶</a>
 </li>
-          <li id="section-3.7-2.4">Transporting capabilities to transfer the permission to execute an operation from caller to service<a href="#section-3.7-2.4" class="pilcrow">¶</a>
+          <li id="section-3.7-2.4">Transporting capabilities to transfer the permission to execute an operation from caller to service.<a href="#section-3.7-2.4" class="pilcrow">¶</a>
 </li>
-          <li id="section-3.7-2.5">Record should be append-only as it goes through the call chain; participation (adding to the record) is not mandatory for every node in the chain<a href="#section-3.7-2.5" class="pilcrow">¶</a>
+          <li id="section-3.7-2.5">Record should be append-only as it goes through the call chain. Participation (adding to the record) is not mandatory for every node in the chain.<a href="#section-3.7-2.5" class="pilcrow">¶</a>
 </li>
         </ol>
 </section>
@@ -1360,10 +1358,10 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
 <a href="#section-3.8" class="section-number selfRef">3.8. </a><a href="#name-general-requirements" class="section-name selfRef">General requirements</a>
         </h3>
 <p id="section-3.8-1">In addition to the above use cases, the authors have determined the following general requirements:<a href="#section-3.8-1" class="pilcrow">¶</a></p>
-<p id="section-3.8-2">AI: Observability should be a requirement. The credential should have a meaningful identifier that can be logged etc<a href="#section-3.8-2" class="pilcrow">¶</a></p>
-<p id="section-3.8-3">Accountability: I need to be able to make a localized decision but still be accountable to the overarching policy and framework that provisioned me<a href="#section-3.8-3" class="pilcrow">¶</a></p>
-<p id="section-3.8-4">I should be able to effect changes in the system (the control plane) based on signals from the application plane<a href="#section-3.8-4" class="pilcrow">¶</a></p>
-<p id="section-3.8-5">Definition of information encapsulated in the document (e.g. capability transmission)<a href="#section-3.8-5" class="pilcrow">¶</a></p>
+<p id="section-3.8-2">Observability should be a requirement. The credential should have a meaningful identifier that can be logged etc.<a href="#section-3.8-2" class="pilcrow">¶</a></p>
+<p id="section-3.8-3">Accountability: Workloads need to be able to make a localized decision but still be accountable to the overarching policy and framework that provisioned them.<a href="#section-3.8-3" class="pilcrow">¶</a></p>
+<p id="section-3.8-4">The system owner/operator should be able to effect changes in the system (the control plane) based on signals from the application plane.<a href="#section-3.8-4" class="pilcrow">¶</a></p>
+<p id="section-3.8-5">Definition of information encapsulated in the document (e.g. capability transmission).<a href="#section-3.8-5" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
