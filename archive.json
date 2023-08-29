@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-08-27T00:30:42.423087+00:00",
+  "timestamp": "2023-08-29T00:29:08.348798+00:00",
   "repo": "bspk/draft-gilman-wimse-use-cases",
   "labels": [
     {
@@ -55,7 +55,7 @@
       "id": "I_kwDOJ_Uxms5vRWa3",
       "title": "Clarify AI term usage",
       "url": "https://github.com/bspk/draft-gilman-wimse-use-cases/issues/5",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "PieterKas",
       "authorAssociation": "COLLABORATOR",
       "assignees": [
@@ -64,8 +64,8 @@
       "labels": [],
       "body": "The term AI is used on line 130:\r\n\r\nAI: Observability should be a requirement. The credential should have a meaningful identifier that can be logged etc\r\n\r\nI don't recall the context of the AI term, but if we mean to say Artificial Intelligence, it feels a bit specific to call that out in the context of observability since this can be achieved in other was as well.",
       "createdAt": "2023-08-25T10:49:15Z",
-      "updatedAt": "2023-08-25T22:22:53Z",
-      "closedAt": null,
+      "updatedAt": "2023-08-28T17:38:50Z",
+      "closedAt": "2023-08-28T17:38:50Z",
       "comments": [
         {
           "author": "jsalowey",
@@ -125,76 +125,110 @@
       "id": "PR_kwDOJ_Uxms5YxpEL",
       "title": "Rephrased the uses-cases introduction",
       "url": "https://github.com/bspk/draft-gilman-wimse-use-cases/pull/2",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "PieterKas",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "Suggesting an alternative framing to encourage others to submit uses cases. Removed some details of how we got to this point (not sure ho relevant that is tot he reader).",
       "createdAt": "2023-08-25T09:23:48Z",
-      "updatedAt": "2023-08-25T09:23:48Z",
+      "updatedAt": "2023-08-28T17:34:52Z",
       "baseRepository": "bspk/draft-gilman-wimse-use-cases",
       "baseRefName": "main",
       "baseRefOid": "41614702e423cae7715759a0bf527a94f5620a5d",
       "headRepository": "bspk/draft-gilman-wimse-use-cases",
       "headRefName": "PieterKas-patch-1",
       "headRefOid": "308fc10fe2d78b92a03405d2986dfbaa88c18e16",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2023-08-28T17:34:52Z",
+      "mergedAt": "2023-08-28T17:34:52Z",
+      "mergedBy": "jricher",
+      "mergeCommit": {
+        "oid": "c39effdfb2521ec1439106c26ee73489093604ae"
+      },
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOJ_Uxms5fNodB",
+          "commit": {
+            "abbreviatedOid": "308fc10"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-08-28T03:32:44Z",
+          "updatedAt": "2023-08-28T03:32:44Z",
+          "comments": []
+        }
+      ]
     },
     {
       "number": 3,
       "id": "PR_kwDOJ_Uxms5YyCIv",
       "title": "Punctuation and minor edits",
       "url": "https://github.com/bspk/draft-gilman-wimse-use-cases/pull/3",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "PieterKas",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "There were sub-list in the original document that did not translate well. Replaced those by incorporating text in the main list items. Added full stops in a few places. rephrasing in one or two places.",
       "createdAt": "2023-08-25T10:33:45Z",
-      "updatedAt": "2023-08-25T10:33:45Z",
+      "updatedAt": "2023-08-28T17:38:48Z",
       "baseRepository": "bspk/draft-gilman-wimse-use-cases",
       "baseRefName": "main",
       "baseRefOid": "41614702e423cae7715759a0bf527a94f5620a5d",
       "headRepository": "bspk/draft-gilman-wimse-use-cases",
       "headRefName": "PieterKas-patch-2",
-      "headRefOid": "1aa857a34ebd5bb9bb159aba484aa4f5c5fbc77e",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "headRefOid": "690a91acbcc4a6522b0e77f925530998fdd69c5d",
+      "closedAt": "2023-08-28T17:38:48Z",
+      "mergedAt": "2023-08-28T17:38:48Z",
+      "mergedBy": "jricher",
+      "mergeCommit": {
+        "oid": "35904966dd84b2649831533a06f7426a124de3a4"
+      },
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOJ_Uxms5fNoXA",
+          "commit": {
+            "abbreviatedOid": "1aa857a"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-08-28T03:31:52Z",
+          "updatedAt": "2023-08-28T03:31:52Z",
+          "comments": []
+        }
+      ]
     },
     {
       "number": 4,
       "id": "PR_kwDOJ_Uxms5YyEC0",
       "title": "Remove specific requirement for SHA",
       "url": "https://github.com/bspk/draft-gilman-wimse-use-cases/pull/4",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "PieterKas",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "One of the requirements stated a requirement for a matching SHA value. I took this to be more of a example of a mechanism since it did not specify which SHA algorithm. Replacing it with a requirement to be able to make a trust decision about the origin and integrity of the software.",
       "createdAt": "2023-08-25T10:39:53Z",
-      "updatedAt": "2023-08-25T22:23:31Z",
+      "updatedAt": "2023-08-28T17:39:59Z",
       "baseRepository": "bspk/draft-gilman-wimse-use-cases",
       "baseRefName": "main",
-      "baseRefOid": "41614702e423cae7715759a0bf527a94f5620a5d",
+      "baseRefOid": "35904966dd84b2649831533a06f7426a124de3a4",
       "headRepository": "bspk/draft-gilman-wimse-use-cases",
       "headRefName": "PieterKas-patch-3",
-      "headRefOid": "5c8efd37d32d4258918c70f2576ffd5c4b3e8752",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "headRefOid": "88d146274b2282b919141ad08c2d3b09d9f82287",
+      "closedAt": "2023-08-28T17:39:59Z",
+      "mergedAt": "2023-08-28T17:39:59Z",
+      "mergedBy": "jricher",
+      "mergeCommit": {
+        "oid": "e72a2e28bfe54bd95de833c9ca1ec1f14599f0c8"
+      },
       "comments": [],
       "reviews": [
         {
@@ -211,6 +245,34 @@
           "comments": []
         }
       ]
+    },
+    {
+      "number": 6,
+      "id": "PR_kwDOJ_Uxms5Y429k",
+      "title": "Update auth mechansms",
+      "url": "https://github.com/bspk/draft-gilman-wimse-use-cases/pull/6",
+      "state": "MERGED",
+      "author": "jsalowey",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "one of the problems in using workload identity credentials with OATH is the lack of robust client authentication mechanisms defined for OAUTH.  Adding text  highlight this point.",
+      "createdAt": "2023-08-28T03:25:06Z",
+      "updatedAt": "2023-08-28T17:40:59Z",
+      "baseRepository": "bspk/draft-gilman-wimse-use-cases",
+      "baseRefName": "main",
+      "baseRefOid": "e72a2e28bfe54bd95de833c9ca1ec1f14599f0c8",
+      "headRepository": "bspk/draft-gilman-wimse-use-cases",
+      "headRefName": "jsalowey-auth-add",
+      "headRefOid": "c2ce483749776c645a9e37d5a68dd73600afaa12",
+      "closedAt": "2023-08-28T17:40:59Z",
+      "mergedAt": "2023-08-28T17:40:59Z",
+      "mergedBy": "jricher",
+      "mergeCommit": {
+        "oid": "6639187cbb54e0d7f2306f41aa8090a1b0b48b2e"
+      },
+      "comments": [],
+      "reviews": []
     }
   ]
 }
